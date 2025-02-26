@@ -104,6 +104,17 @@ app.get('/api/collections', async (req, res) => {
   }
 });
 
+app.get('/api/training', async (req, res) => {
+  try {
+    const data = await mongoose.connection.db.collection('Training').find({}).toArray();
+    res.json({ success: true, data });
+  } catch (error) {
+    res.status(500).json({ success: false, message: 'Error fetching training data' });
+    console.error('Error fetching training data:', error);
+  }
+});
+
+
 // Route to get participant profiles
 app.get('/api/participants', async (req, res) => {
   try {
