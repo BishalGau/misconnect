@@ -106,7 +106,7 @@ app.get('/api/collections', async (req, res) => {
 
 app.get('/api/training', async (req, res) => {
   try {
-    const data = await mongoose.connection.db.collection('Training').find({}).toArray();
+    const data = await mongoose.connection.db.collection('ActivityTRNTOT').find({}).toArray();
     res.json({ success: true, data });
   } catch (error) {
     res.status(500).json({ success: false, message: 'Error fetching training data' });
