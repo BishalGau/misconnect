@@ -314,7 +314,8 @@ const VALID_COLLECTIONS = [
   'CooperativePROFILE',
   'AgrovetPROFILE',
   'A2F',
-  'A2M'
+  'A2M',
+  'ActivityTRNTOT'
 ];
 
 const PORT = process.env.PORT || 5000;
