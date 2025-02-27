@@ -12,7 +12,7 @@ const app = express();
 
 // Update CORS configuration at the top of the file
 const corsOptions = {
-  origin: ['http://localhost:3000', 'https://p4pmis.onrender.com'],
+  origin: ['http://localhost:3000', 'https://p4pmis.onrender.com', 'https://mis.safnepal.com'],
   methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
   credentials: true,
   optionsSuccessStatus: 204
